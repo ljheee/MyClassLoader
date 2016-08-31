@@ -50,7 +50,12 @@ public class Use3DES {
 		return value;
 	}
 	
-	
+	/**
+	 * 解密
+	 * @param key	192位的加密Key
+	 * @param src	待解密数据
+	 * @return
+	 */
 	public static byte[] decrypt(byte[] key, byte[] src){
 		byte[] value = null;
 		SecretKey deskey = new SecretKeySpec(key, ALGORITHM);
